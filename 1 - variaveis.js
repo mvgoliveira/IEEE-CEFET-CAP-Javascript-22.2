@@ -48,14 +48,17 @@ console.log(lider)
 
 console.log(projeto) // explicar o porque o codigo não roda nessa parte
 
-const nomeDaEquipe = "WolfByte"
-
 // explicar tipos primitivos e o porque das aspas
+// Tipos primitivos : String, Number, Boolean, Null, undefined,
 //camel case -> corcovas do camelo
+//snake case -> cobra
 
-nomeDaEquipe = "WolfBotz"
+const nome_da_equipe = "WolfByte" // snake case
+const nomeDaEquipe = "WolfByte" // camel case
 
+nomeDaEquipe = "WolfByte" // explicar por que não é possível mudar
 
+console.log(nomeDaEquipe);
 
 
 

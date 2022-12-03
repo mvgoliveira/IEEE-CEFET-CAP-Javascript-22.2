@@ -20,27 +20,28 @@ let concatenacao = "a" + "bc"
     console.log(maior, menor)
 }
 
-//verdadeiro -> explicar a diferencça entre igualdade e atribuição
-let falso = 2 == "2";
+//verdadeiro -> explicar a diferença entre igualdade e atribuição
+let verdadeiro = 2 == "2"; // comparação independente do tipo.
 
 //falso
-let falso = 2 === "2";
+let falso = 2 === "2"; // comparação entre o tipo de dado e o valor.
 
 let verdadeira = false != true
-//verdadeiro -> ressaltor que qualquer coisa comparada com exceção do 0 e do " " é verdadeiro
+//verdadeiro -> ressaltar que qualquer coisa comparada com exceção do 0 e do " " é verdadeiro
 
 for (let i = 0; i <= 5; i++) {
     if (i % 2 == 0) { //SE  -> alguma coisa for verdade -> realiza a ação de baixo
         console.log(i + " é par" + "\n") // falar sobre concatenação -> \n
     } else { //SENÃO
         console.log(`${i} é impar \n`) // template string
-    }
+    } 
+}
 
-    if (i >= 2 && i < 4) { // 
-        console.log("numero: ", i);
-    } else if (i < 2 || i < 5) {
-        console.log("Numero legal: ", i)
-    }
-
-    // while 
-} // explicar bem rápido de ternário
+let i = 0;
+while (i <= 5) { // repete o que está dentro do escopo até a condição ser falso
+    i % 2 == 0
+        ? (console.log(i + " é par" + "\n"))
+        : ( console.log(`${i} é impar \n`)); // operador ternário
+    
+    i++;
+}

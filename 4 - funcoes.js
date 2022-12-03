@@ -2,7 +2,7 @@ function soma(a, b) { // explicar -> a diferença entre as funções do JS e de 
     return a + b
 }
 
-// explicar -> dirferentes formas de se chamar uma função.
+// explicar -> diferentes formas de se chamar uma função.
 let vSoma = soma(1, 3)
 
 console.log(vSoma);
@@ -22,5 +22,7 @@ console.log(soma(1, 4));
     const subtracao = (a, b) =>  return a - b
     
 */
+
+const divisao = (a, b) => { return a / b } // retorno explícito
 const subtracao = (a, b) => a - b // retorno implícito
 const somaUm = a => a + 1 //menor maneira possível de escrever uma função => somente funções com 1 parâmetro

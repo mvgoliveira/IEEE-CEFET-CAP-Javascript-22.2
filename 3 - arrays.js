@@ -2,7 +2,11 @@
 
 let array = [1, 2 ,3]
 
-console.log(array[0]); //Explicar que inicia do indice 0.
+//comentar que os arrays em js também podem conter mais de um tipo 
+// -> apesar de não ser comum ver isso sendo usado em aplicações
+let array2 = [1, 'a', true] 
+
+console.log(array[0]); //Explicar que inicia do índice 0.
 
 // explicar o que são objetos e como eles são obtidos (consultar a bd, api, JSONs, etc)
 let membro = {
@@ -49,6 +53,7 @@ let membros = [
 
 console.log(membros[10]) // array sempre começa no índice 0
 console.log(membros.length) // retorna o tamanho do array
+
 // explicar o forEach e que em outras linguagens é usado o for
 membros.forEach(nome => console.log(nome))
 
@@ -63,7 +68,8 @@ for (let membro of membros) {
     console.log(membro)
 }
 
-//comentar que os arrays em js também podem conter mais de um tipo -> apesar de não ser comum ver isso sendo usado em aplicações
+// Comentar que o Js tem funções prontas pra realizar várias manipulações com
+// arrays, objetos e matrizes.
 let membrosAtivos = membros.filter(membro => membro.ativo) // retorna os membros ativos da equipe 
 
 let membrosWeb = membros.filter(membro => {
